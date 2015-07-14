@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp" android:layout_height="wrap_content"
+    android:background="#00000000" android:id="@+id/pop_plusmenu">
+    <ImageButton
+        android:id="@+id/imgbtn_plusmenu_sync"
+        android:background="@mipmap/sync"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        style="@style/ImgBtnOfPlusMenu" />
+    <ImageButton
+        android:id="@+id/imgbtn_plusmenu_swingcard"
+        android:background="@mipmap/card"
+        style="@style/ImgBtnOfPlusMenu"
+        android:layout_alignTop="@+id/imgbtn_plusmenu_sync"
+        android:layout_toLeftOf="@+id/imgbtn_plusmenu_sync"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"/>
+    <ImageButton
+        android:id="@+id/imgbtn_plusmenu_shakehands"
+        android:background="@mipmap/friend"
+        style="@style/ImgBtnOfPlusMenu"
+        android:layout_alignTop="@+id/imgbtn_plusmenu_sync"
+        android:layout_toRightOf="@+id/imgbtn_plusmenu_sync"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"/>
+</RelativeLayout>
