@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#f8f8f8">
+    <ImageButton
+        style="@style/ImgBtnOfBottnBar"
+        android:id="@+id/imgbtn_ring"
+        android:background="@mipmap/ring"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp" />
+
+    <ImageButton
+        style="@style/ImgBtnOfBottnBar"
+        android:id="@+id/imgbtn_contact"
+        android:background="@mipmap/contact"
+        android:layout_toLeftOf="@+id/imgbtn_plus"
+        android:layout_marginRight="25dp"/>
+    <ImageButton
+        style="@style/ImgBtnOfBottnBar"
+        android:id="@+id/imgbtn_plus"
+        android:background="@mipmap/add"
+        android:layout_centerHorizontal="true"/>
+    <ImageButton
+        style="@style/ImgBtnOfBottnBar"
+        android:id="@+id/imgbtn_compass"
+        android:background="@mipmap/compass"
+        android:layout_toRightOf="@+id/imgbtn_plus"
+        android:layout_marginLeft="25dp"/>
+
+    <ImageButton
+        style="@style/ImgBtnOfBottnBar"
+        android:id="@+id/imgbtn_me"
+        android:background="@mipmap/me"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"/>
+</RelativeLayout>

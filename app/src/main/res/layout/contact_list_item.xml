@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="120dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/contact_photo"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"
+        android:id="@+id/contact_name"
+        android:layout_alignTop="@+id/contact_photo"
+        android:layout_toRightOf="@+id/contact_photo"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15dp"
+        android:id="@+id/contact_phone"
+        android:layout_below="@+id/contact_name"
+        android:layout_alignLeft="@+id/contact_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15dp"
+        android:id="@+id/contact_mail"
+        android:layout_below="@+id/contact_phone"
+        android:layout_alignLeft="@+id/contact_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15dp"
+        android:id="@+id/contact_hobby"
+        android:layout_below="@+id/contact_mail"
+        android:layout_alignLeft="@+id/contact_name" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/contact_hobby"
+        android:id="@+id/contact_icons"
+        android:layout_alignLeft="@+id/contact_name">
+        <ImageButton
+            style="@style/ImgViewOfContactIcons"
+            android:id="@+id/contact_icon1"
+            android:background="@mipmap/qq"
+            />
+        <ImageButton
+            style="@style/ImgViewOfContactIcons"
+            android:id="@+id/contact_icon2"
+            android:background="@mipmap/wechat"
+            android:layout_marginLeft="15dp"/>
+        <ImageButton
+            style="@style/ImgViewOfContactIcons"
+            android:id="@+id/contact_icon3"
+            android:background="@mipmap/weibo"
+            android:layout_marginLeft="15dp"/>
+        <ImageButton
+            style="@style/ImgViewOfContactIcons"
+            android:id="@+id/contact_icon4"
+            android:background="@mipmap/renren"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

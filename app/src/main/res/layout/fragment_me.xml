@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.pride1952.myoptimusx3.MeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        layout="@layout/contact_list_item"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/me_listView"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:dividerHeight="2dp"/>
+
+
+</RelativeLayout>

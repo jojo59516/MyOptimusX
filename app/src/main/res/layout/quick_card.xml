@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/quick_start" android:background="#ffffff">
+    <ImageButton
+        android:background="@mipmap/weibo"
+        android:id="@+id/imgbtn_quick1"
+        style="@style/ImgBtnOfQuick"
+        android:clickable="false" />
+    <ImageButton
+        android:background="@mipmap/renren"
+        android:id="@+id/imgbtn_quick2"
+        android:layout_toRightOf="@+id/imgbtn_quick1"
+        style="@style/ImgBtnOfQuick"
+        android:outlineProvider="paddedBounds" />
+    <ImageButton
+        android:background="@mipmap/add"
+        android:layout_toRightOf="@+id/imgbtn_quick2"
+        android:id="@+id/imgbtn_quick3"
+        style="@style/ImgBtnOfQuick" />
+
+</RelativeLayout>
